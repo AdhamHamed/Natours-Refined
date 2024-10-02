@@ -30,7 +30,7 @@ var login = /*#__PURE__*/function () {
           _context.next = 3;
           return axios__WEBPACK_IMPORTED_MODULE_0___default()({
             method: "POST",
-            url: "http://localhost:3000/api/v1/users/login",
+            url: "/api/v1/users/login",
             data: {
               email: email,
               password: password
