@@ -45,7 +45,6 @@ mongoose
 /**
  * Normalize a port into a number, string, or false.
  */
-
 function normalizePort(val) {
 	let port = parseInt(val, 10);
 
