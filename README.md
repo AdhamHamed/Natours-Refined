@@ -43,6 +43,7 @@ npm install
 npm run start:dev
 ```
 - In config.env, add your MongoDB link for it to generate the data.
+- When running `npm run start:dev` it may not run and will give you lines of "mongoose" is not defined, you may need to install needed packages manually.
 
 ## File Structure
 ```
