@@ -2,6 +2,10 @@
 
 Natours Refined is a MERN-stack application that allows users to book and manage tours. The app features user authentication, automated tour generation, payment integration, and more, providing a seamless experience for users and administrators. This project is a portfolio project provided from Jonas Schmedtmann's [Node.js Course](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/?couponCode=LETSLEARNNOWPP). It's really a helpful course and very versatile.
 
+
+## Usage
+- This repository is a refined version of Schmedtmann's course, since there were many problems in it because it's relatively outdated. You can check out the base version and the problems faced [**here**](https://github.com/AdhamHamed/natours?tab=readme-ov-file#natours-application)
+- The solutions provided worked as it supposed to, but this version solves the last part which is the bundling part, which takes part in delaying literally **EVERYTHING**
 ## Features
 
 - **User Authentication**: Ability to login/signup with JWT (only login is implemented).
@@ -116,8 +120,9 @@ natours-refined/
 ├── app.js                         # Main application file
 ├── README.md                      # Project documentation
 ```
+## What's different
+This time, there was a *boiler plate*; to be able to bundle the project and apply pure js functions as you'll find yourself required implementing stripe functions, parcel didn't work, so I had to implement a certain way of creating a react app using webpack, it actually didn't seem of much difference, I created a new separate folder for this project, and using the first command of [this blog post](https://medium.com/@aakatev/multipage-application-with-express-and-webpack-f205bae1cf53), I was able to build a clean folder that "bundle"able. With many hours (*exact 120 days to be precise*), reading [this](https://github.com/webpack/webpack/issues/9444#issuecomment-513604823) exact comment, I figured out I need a ~~sort of~~ boiler plate to start with.
 
-## Usage
-
+You can use this repo as a guide to walk through with the base version while learning Schmedtmann's course, best of luck!
 ## License
 This project is licensed under the MIT License.
