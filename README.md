@@ -1,6 +1,6 @@
 # Natours Refined
 
-Natours Refined is a MERN-stack application that allows users to book and manage tours. The app features user authentication, automated tour generation, payment integration, and more, providing a seamless experience for users and administrators.
+Natours Refined is a MERN-stack application that allows users to book and manage tours. The app features user authentication, automated tour generation, payment integration, and more, providing a seamless experience for users and administrators. This project is a portfolio project provided from Jonas Schmedtmann's [Node.js Course](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/?couponCode=LETSLEARNNOWPP). It's really a helpful course and very versatile.
 
 ## Features
 
