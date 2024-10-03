@@ -115,5 +115,9 @@ natours-refined/
 ├── package-lock.json              # Lock file for installed dependencies
 ├── app.js                         # Main application file
 ├── README.md                      # Project documentation
-└── bin/
-    └── www                        # Entry point for starting the application
+```
+
+## Usage
+
+## License
+This project is licensed under the MIT License.
