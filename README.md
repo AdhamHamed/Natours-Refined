@@ -29,4 +29,4 @@ To get your local environment up and running, follow these steps:
 
 - Clone the repository using:
   ```bash
-  git clone <your-repo-url>
+  git clone https://github.com/AdhamHamed/Natours-Refined.git
