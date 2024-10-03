@@ -41,6 +41,7 @@ npm run start:dev
 - In config.env, add your MongoDB link for it to generate the data.
 
 ## File Structure
+```
 natours-refined/
 │
 ├── bin/                           # Directory for executable files
