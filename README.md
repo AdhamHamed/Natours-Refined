@@ -30,3 +30,89 @@ To get your local environment up and running, follow these steps:
 - Clone the repository using:
   ```bash
   git clone https://github.com/AdhamHamed/Natours-Refined.git
+
+- Open in VSCode
+```
+cd natours-refined
+code .
+npm install
+npm run start:dev
+```
+- In config.env, add your MongoDB link for it to generate the data.
+
+## File Structure
+natours-refined/
+│
+├── bin/                           # Directory for executable files
+│   └── www                        # Entry point for starting the application
+│
+├── controllers/                   # Application controllers
+│   ├── authEnController.js        
+│   ├── bookingController.js        
+│   ├── errorController.js          
+│   ├── handlerFactory.js           
+│   ├── reviewController.js         
+│   ├── tourController.js           
+│   ├── userController.js           
+│   └── viewController.js           
+│
+├── models/                        # Data models
+│   ├── bookingModel.js            
+│   ├── reviewModel.js             
+│   ├── tourModel.js               
+│   └── userModel.js               
+│
+├── public/                        # Public assets (CSS, images, etc.)
+│   ├── stylesheets/
+│   │   └── style.css              
+│   ├── images/
+│   │   ├── tours/                 
+│   │   ├── users/                 
+│   │   └── logos/                 
+│   └── javascripts/
+│       ├── alert.js               
+│       ├── bundle.js              
+│       ├── login.js               
+│       ├── stripe.js              
+│       └── updateSettings.js       
+│
+├── routes/                        # Express routes
+│   ├── tourRoutes.js              
+│   ├── userRoutes.js              
+│   ├── bookingRoutes.js           
+│   ├── configRoutes.js            
+│   ├── reviewRoutes.js            
+│   └── viewRoutes.js              
+│
+├── utils/                         # Utility functions
+│   ├── apiFeatures.js             
+│   ├── appError.js                
+│   ├── catchAsync.js              
+│   └── email.js                   
+│
+├── views/                         # Template files
+│   ├── emails/                    # Email templates
+│   │   ├── _style.pug             
+│   │   ├── baseEmail.pug          
+│   │   ├── passwordReset.pug      
+│   │   └── welcome.pug            
+│   ├── _footer.pug                
+│   ├── _header.pug                
+│   ├── _reviewCard.pug            
+│   ├── account.pug                
+│   ├── base.pug                   
+│   ├── error.pug                  
+│   ├── login.pug                  
+│   ├── overview.pug               
+│   └── tour.pug                   
+│
+├── config.env                     # Environment variables configuration file
+├── .babelrc                       # Babel configuration file
+├── webpack.config.js              # Webpack configuration file
+├── .gitignore                     # Git ignore file
+├── package.json                   # Project metadata and dependencies
+├── package-lock.json              # Lock file for installed dependencies
+├── app.js                         # Main application file
+├── README.md                      # Project documentation
+└── bin/
+    └── www                        # Entry point for starting the application
