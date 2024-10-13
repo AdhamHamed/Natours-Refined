@@ -12,5 +12,5 @@
 			"dest": "bin/www"
 		}
 	],
-	"public": "public"
+	"public": true
 }
