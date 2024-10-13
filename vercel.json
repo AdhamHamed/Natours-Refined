@@ -2,17 +2,20 @@
 	"version": 2,
 	"builds": [
 		{
-			"src": "app.js",
+			"src": "bin/www",
 			"use": "@vercel/node"
 		}
 	],
 	"routes": [
 		{
-			"src": "/api/(.*)",
-			"dest": "app.js"
+			"src": "/api/v1/(.*)",
+			"dest": "bin/www"
 		}
 	],
-	"env": {
-		"NODE_ENV": "production"
+	"public": "public",
+	"functions": {
+		"bin/www": {
+			"runtime": "nodejs16.x"
+		}
 	}
 }
