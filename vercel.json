@@ -12,10 +12,5 @@
 			"dest": "bin/www"
 		}
 	],
-	"public": "public",
-	"functions": {
-		"bin/www": {
-			"runtime": "nodejs16.x"
-		}
-	}
+	"public": "public"
 }
