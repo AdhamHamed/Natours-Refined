@@ -105,7 +105,6 @@
 // 	});
 // });
 
-
 // #!/usr/bin/env node
 
 const dotenv = require("dotenv");
@@ -115,16 +114,24 @@ const mongoose = require("mongoose");
 const app = require("./app"); // Express app
 
 const DB = process.env.DATABASE.replace(
-  "<password>",
-  process.env.DATABASE_PASSWORD
+	"<password>",
+	process.env.DATABASE_PASSWORD
 );
 
 mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("DB connection successful!"));
+	.connect(DB, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => console.log("DB connection successful!"));
+
+process.on("SIGTERM", () => {
+	console.log("Received SIGTERM. Gracefully shutting down.");
+	server.close(() => {
+		console.log("Closed out remaining connections.");
+		process.exit(0);
+	});
+});
 
 // Vercel requires you to export a handler function
 module.exports = app;
