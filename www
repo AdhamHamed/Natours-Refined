@@ -6,10 +6,9 @@
 let dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 let mongoose = require("mongoose");
-let app = require("../app");
+let app = require("./app");
 let debug = require("debug")("natours-refined:server");
 let http = require("http");
-import "../app";
 /**
  * Get port from environment and store in Express.
  */
